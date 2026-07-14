@@ -202,9 +202,76 @@ a:active {
   color: #000000;
 }
 
-.dummy {
-margin: 0;
+
+
+ul time{
+	background-color: #ff33cc;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 90%;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
 }
+
+#himitsu1, #himitsu2, #himitsu3, #himitsu4, #himitsu5 {
+    margin-top: 40px;   
+    margin-bottom: 10px;
+}
+
+#himitsu1 + p,
+#himitsu2 + p,
+#himitsu3 + p,
+#himitsu4 + p,
+#himitsu5 + p {
+    margin-bottom: 40px; 
+}
+
+.himitsu-img {
+  box-shadow: 0px 0px 10px 3px #aaaaaa;
+  border-radius: 10px;
+  width: 120px;          
+  margin-left: 20px;
+  margin-bottom: 10px;
+  object-fit: contain;   
+}
+.himitsu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.page-top {
+  text-align: right;      
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.page-top a {
+  color: #ff99ff;          
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-top a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media print {
+    nav, footer {
+        display: none;
+    }
+    body {
+        background-color: #fff;
+        color: #000;
+        font-size: 12pt;
+    }
+}
+
 
 
 
